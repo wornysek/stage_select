@@ -48,7 +48,7 @@ function ResetPlayerMenu()
 end
 
 function SubmitPlayerMenu()
-    if not ClosePlayers[CurrentSelect] or CurrentCheck(ClosePlayers[CurrentSelect]) then
+    if CurrentCheck(ClosePlayers[CurrentSelect]) then
         CurrentCb(ClosePlayers[CurrentSelect])
         ResetPlayerMenu()
     else
